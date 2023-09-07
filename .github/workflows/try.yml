@@ -1,0 +1,7 @@
+name: Print 
+on: [push]
+jobs:
+    Explore_github_actions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello World!"
