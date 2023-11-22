@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+  background-color: black;    
+  text-align: center;
+  color: #ffffff;
+  height: 500px;
+  width: 317px;
+  border-radius: 15px;
+  position: relative;
+}
+.mydiv-save {
+  position: absolute;
+  background-color: rgb(169, 162, 150);    
+  color: white;
+  height: 40px;
+  width: 60px;
+  border-radius: 20%;
+  right: 240px;
+  bottom: 440px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 43px;
+}
+.numberdiv-plus {
+  position: absolute;
+  background-color: orange;    
+  text-align: bottom;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+.numberdiv-equal {
+  position: absolute;
+  background-color: #505050;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 15px;
+  right: 90px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-ac {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 15px;
+  right: 165px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-zero {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 15px;
+  right: 240px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-minus {
+  position: absolute;
+  background-color: orange;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 90px;
+  right: 15px;
+  font-size: 30px;
+  line-height: 60px;
+}
+.numberdiv-three {
+  position: absolute;
+  background-color: #505050;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 90px;
+  right: 90px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-two {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 90px;
+  right: 165px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-one {
+  cursor: pointer;
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 90px;
+  right: 240px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-divide {
+  position: absolute;
+  background-color: orange;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 165px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-six {
+  position: absolute;
+  background-color: #505050;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 165px;
+  right: 90px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-five {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 165px;
+  right: 165px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-four {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 165px;
+  right: 240px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-multiply {
+  position: absolute;
+  background-color: orange;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 240px;
+  right: 15px;
+  font-size: 30px;
+  line-height: 60px;
+}
+.numberdiv-nine {
+  position: absolute;
+  background-color: #505050;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 240px;
+  right: 90px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-eight {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 240px;
+  right: 165px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-seven {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 240px;
+  right: 240px;
+  font-size: 20px;
+  line-height: 60px;
+}
+.numberdiv-res {
+  position: absolute;  
+  bottom: 300px;
+  right: 30px;
+  line-height: 60px;
+  font-size: 40px;
+
+}
+
+.highlight{
+  background-color: rgb(155, 153, 153);
+
+}
+.orangehighlight{
+  background-color: rgb(240, 197, 155);
+
+}
+
+</style>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<div class="myDiv">
+  <div class ="numberdiv-plus" onclick="operatorpress()">
+    +
+  </div>
+  <div class ="mydiv-save">
+    SAVE
+  </div>
+  <div class ="numberdiv-equal" onclick="buttonpress_equal()">
+    =
+  </div>
+  <div class ="numberdiv-ac" onclick="buttonpress_AC()">
+    AC
+  </div>
+  <div class ="numberdiv-zero" onclick="buttonpress()">
+    0
+  </div>
+  <div class ="numberdiv-res" id="result" onclick="buttonpress()">
+  </div>
+  <div class ="numberdiv-minus" onclick="operatorpress()">
+    -
+  </div>
+  <div class ="numberdiv-three" onclick="buttonpress()">
+    3
+  </div>
+  <div class ="numberdiv-two" onclick="buttonpress()">
+    2
+  </div>
+  <div class ="numberdiv-one" onclick="buttonpress()">
+    1
+  </div>
+  <div class ="numberdiv-divide" onclick="operatorpress()">
+    /
+  </div>
+  <div class ="numberdiv-six" onclick="buttonpress()">
+    6
+  </div>
+  <div class ="numberdiv-five" onclick="buttonpress()">
+    5
+  </div>
+  <div class ="numberdiv-four" onclick="buttonpress()">
+    4
+  </div>
+  <div class ="numberdiv-multiply" onclick="operatorpress()">
+    *
+  </div>
+  <div class ="numberdiv-nine" onclick="buttonpress()">
+    9
+  </div>
+  <div class ="numberdiv-eight" onclick="buttonpress()">
+    8
+  </div>
+  <div class ="numberdiv-seven" onclick="buttonpress()">
+    7
+  </div>
+</div>
+<script src="calculator.js"></script>
+<script src="events.js"></script>
+
+</body>
+</html>
