@@ -19,6 +19,15 @@ function buttonpress(){
   document.getElementById("result").innerHTML=document.getElementById("result").innerHTML+event.target.innerText;;
 }
 
+function textbuttonpress(){
+
+  var ele = event.target;
+  ele.classList.add("highlight");
+  setTimeout(function () {
+    ele.classList.remove("highlight");
+  }, 300);
+}
+
 function buttonpress_AC(){
     var ele = event.target;
   ele.classList.add("highlight");
@@ -32,7 +41,6 @@ function buttonpress_AC(){
 }
 function operatorpress() {
     var ele = event.target;
-    console.log(ele);
   ele.classList.add("orangehighlight");
   setTimeout(function () {
     ele.classList.remove("orangehighlight");
@@ -49,7 +57,6 @@ function buttonpress_equal(){
   setTimeout(function () {
     ele.classList.remove("highlight");
   }, 300);
-  //var resultvalue = document.getElementById("result").innerHTML;
   if (number1 !== "" && latestOperator !== "") {
 
     number2 = Number(document.getElementById("result").innerHTML);

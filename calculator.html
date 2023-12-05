@@ -13,12 +13,26 @@
 }
 .mydiv-save {
   position: absolute;
-  background-color: rgb(169, 162, 150);    
+  background-color: #505050;    
   color: white;
   height: 40px;
   width: 60px;
-  border-radius: 20%;
+  border-radius: 10%;
   right: 240px;
+  bottom: 440px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 43px;
+}
+
+.mydiv-records {
+  position: absolute;
+  background-color: #505050;    
+  color: white;
+  height: 40px;
+  width: 100px;
+  border-radius: 10%;
+  right: 20px;
   bottom: 440px;
   font-size: 20px;
   text-align: center;
@@ -247,9 +261,12 @@
   <div class ="numberdiv-plus" onclick="operatorpress()">
     +
   </div>
-  <div class ="mydiv-save">
+  <div class ="mydiv-save" onclick="textbuttonpress()">
     SAVE
   </div>
+  <div class ="mydiv-records" onclick="textbuttonpress()">
+    RECORDS
+    </div>
   <div class ="numberdiv-equal" onclick="buttonpress_equal()">
     =
   </div>
@@ -297,6 +314,7 @@
   <div class ="numberdiv-seven" onclick="buttonpress()">
     7
   </div>
+  
 </div>
 <script src="calculator.js"></script>
 <script src="events.js"></script>
